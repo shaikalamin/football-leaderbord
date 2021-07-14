@@ -1,0 +1,149 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*----------------------- header-------------------- */
+.full-header{
+    width: 100%;
+    background-color: #2D25A0;
+    margin-bottom: 50px;
+}
+.header-wrapper {
+	width: 1200px;
+    height: 550px;
+	margin: 0 auto;
+    position: relative;
+}
+h1 {
+    font-size: 64px;
+    color: white;
+    padding-left: 20px;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .header-container{
+      display: flex;
+      padding: 80px 0;
+      
+  }
+  .header-content{
+   width: 50%;
+
+  }
+  .header-image{
+      width: 40%;
+  }
+  img.ball {
+    z-index: 2;
+    position: relative;
+    width: 15%;
+    right: 30px;
+    top: 175px;px;
+    transition: transform 1s ease-out 0.0s;
+}
+  img.header-player {
+    z-index: 1;
+    position: relative;
+    width: 90%;
+    top: 40px;
+    transition: transform 0.02s ease-in;
+}
+  img.header-bg {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+}
+.header-image:hover img.header-player{
+    transform: rotate(5deg);
+}
+.header-image:hover img.ball{
+    transform: translateY(-100px) rotate(360deg);
+}
+/*----------------- players name and img style ---------------*/
+.waraper{
+   width: 1050px;
+   margin: 0 auto;
+}
+
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+   
+}
+
+.player-container{
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.player-container img{
+height: 256px;
+width: 300px;
+}
+
+.player-details{
+    height: 154px;
+    width: 300px;
+}
+
+.player-details p{
+    text-align:left;
+    font-size: 10px;
+}
+/* ---------------middle section------------ */
+.middle{
+    display: flex;
+    margin: 160px auto;
+    width: 1050px;
+
+       
+}
+.middle-tittel{
+    text-align:left;
+    font-size: 15px;
+}
+.button:hover{
+     color: #E02C6D;
+      
+}
+.middle-banner img{
+    width: 567px;
+    height: 427px;
+    margin-right: auto;
+}
+
+/* ----------------footer------------------- */
+.footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    border: 0px solid whitesmoke;
+}
+.footer-icon{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); 
+   grid-column-gap: 20px;
+   margin: 0 20px;
+}
+
+/*--------------------- media queries---------------- */
+/*----------- Mobile devies---------- */
