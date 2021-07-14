@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    export default function ECommerce(props) {
+    return (
+    <div style={{ '--src' : `url(${require('assets/4eae6b622ff850a3689b63a927bab8a7.png')})` }}
+        className={css(styles.group, styles.group_lyt)}>
+        <Px x="40px 43fr 269fr" y="41px minmax(0px, max-content) 387fr" className={css(styles.txt)}>
+            {'-30%'}
+        </Px>
+    </div>
+    );
+    }
+
+    const styles = StyleSheet.create({
+    group: { display: 'flex', background: 'var(--src) center center / cover no-repeat', backgroundColor:
+    'rgb(190,190,190)' },
+    group_lyt: {
+    position: 'relative',
+    overflow: 'visible',
+    minHeight: 446,
+    flexGrow: 1,
+    margin: '0px 0px 7.5px',
+    '@media (max-width: 767.98px)': { minHeight: 200, flexGrow: 1, margin: '0px 0px 7.5px' }
+    },
+    txt: { display: 'flex', alignItems: 'center', font: '16px/1.125 Montserrat, Helvetica, Arial, serif', color:
+    'rgb(254,83,53)', letterSpacing: '0', width: '100%', height: '100%' }
+    });
+
+</body>
+
+</html>
